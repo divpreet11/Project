@@ -13,7 +13,7 @@ except:
 	print("Can't open Camera. Camera engaged or not available.")
 
 ## Load model
-model=load_model('../models/prediction_model.h5')
+model=load_model('models/prediction_model.h5')
 
 ## Load face cascade using Haar Cascade Classifier to detect face frames
 face_cascade = cv2.CascadeClassifier('haar_face.xml')

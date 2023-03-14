@@ -38,6 +38,8 @@ def define_model(base_model, num_cat):
     model.add(Dense(1024, activation='relu'))
     model.add(Dropout(0.5))
     model.add(Dense(5, activation='softmax'))
+    
+    
     print(model.summary())
     # plot_model(model, to_file='mode.png', show_shapes=True)
     return model
